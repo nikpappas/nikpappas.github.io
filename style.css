@@ -1,0 +1,311 @@
+/* HTML5 Support for old browsers */
+header, section, footer, aside, nav, main, article, figure {
+    display: block;
+}
+
+iframe {
+    display: block;
+    margin: 0 auto;
+}
+iframe::after {
+    color: pink;
+    content: "Map PLACEHOLDER";
+}
+span {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background: url("images/morephotos/BLACKBOARDCROP.jpeg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% auto;
+    background-color: #333;
+    margin: 0;
+    padding: 0;
+}
+/* HEADER */
+#header {
+    position: fixed;
+    margin: 0;
+    width: 100%;
+    color: white;
+    transition: all 0.3s;
+    font: 400 14px/25px Raleway, Arial,sans-serif !important;
+    z-index: 10;
+
+}
+.header {
+    height: 68px;
+    background-color: rgba(0,0,0,0);
+}
+.header-scrolled {
+    height: 50px;
+    background-color: rgba(0,0,0,0.3);
+}
+#header-placeholder{
+    height: 68px;
+}
+#social::after{
+    content: "  ➞";
+}
+
+#social-links a {
+    color: white;
+    width: 0px;
+    display: inline-block;
+    margin-left: 25px;
+}
+
+.even-flex-box {
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#sidebarCollapse {
+  background-color: white;
+  border-radius: 0px;
+  font-size: 3rem;
+  padding: 1% 2%;
+  position: fixed;
+  z-index: 1;
+  top: 60%;
+  left: 0%;
+  -ms-transform: rotate(270deg);
+  -webkit-transform: rotate(270deg);
+  transform: rotate(270deg);
+  transform-origin: top left;
+  /*-webkit-transform: scaleY(-1);
+    transform: scaleY(-1);*/
+}
+
+#sidebarCollapse .fa-bars {
+  -ms-transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+  font-size: 3rem;
+}
+
+/* SIDEBAR */
+#sidebar {
+    min-width: 400px;
+    position: fixed;
+    top: 0;
+    left: -90vh;
+    height: 100vh;
+    width: 25vw;
+    z-index: 999;
+    background: #262626;
+    color: #999999;
+    transition: all 0.3s;
+}
+
+#dismiss {
+  font-size: 40px;
+  text-align: right;
+  margin-right: 30px;
+  cursor: pointer;
+}
+
+#sidebar ul {
+  border-bottom: 1px solid;
+}
+
+#sidebar .sidebar-content {
+  margin-left: 20%;
+  margin-right: 15%;
+  margin-top: 5%;
+}
+
+#sidebar li a {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #999999;
+}
+
+#sidebar a:hover {
+  text-decoration: none;
+}
+
+#sidebar a {
+  font-size: 20px;
+  color: white;
+  margin-right: 10px;
+}
+
+#sidebar.active {
+    left: 0;
+}
+
+
+/* --------SECTIONS-------- */
+section {
+    margin: 0 auto;
+    text-align: center;
+}
+
+#about {
+    height: 100vh;
+}
+
+.booking-form-scrolled {
+    transform: rotateX(99deg);
+}
+#booking-form input{
+    height: 47px;
+    width: 130px;
+    text-align: center
+}
+#perspective-form-hider {
+    background-color: white;
+    height: 23px;
+    transform: translateZ(1px);
+}
+
+#booking-form-wrapper{
+    perspective: 1200px;
+    position: absolute;
+    bottom: 0;
+    left: 20vw;
+    width: 60vw;
+    height: 15vh;
+    min-height: 100px;
+}
+#booking-form {
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    transition: all 0.4s;
+    transform-origin: 0 100%;
+}
+
+#booking-form input {
+    background-color: white;
+    border: solid 1px #444;
+}
+#booking-form button {
+    background-color: black;
+    color: white;
+    width: 100px;
+    height: 40px;
+
+}
+
+#booking-form input, #booking-form button {
+    margin: 0 auto;
+}
+/* SECTION STORY */
+#story {
+    background-color: #d4ece8;
+    padding-bottom: 5%;
+}
+
+#story .hostel-logo-col {
+  padding: 0;
+    background-color: black;   
+}
+
+#story .hostel-logo {
+  width: 100%;
+}
+
+#story .about {
+  background-color: rgb(242, 242, 242);
+}
+
+#story .simple-block {
+  margin: 10%;
+}
+
+#story .video-left {
+  background-color: rgb(242, 242, 242);
+}
+
+#story .video-right {
+  background-color: black;
+}
+
+#story video {
+  margin-top: 20%;
+  margin-bottom: 20%;
+}
+
+/* SECTION ROOMS */
+#rooms {
+    background-color: #f2f2f2;
+}
+
+#rooms .six-room {
+  background-color: rgb(255, 255, 255);
+}
+
+#rooms .simple-block {
+  margin: 10%;
+}
+
+#rooms .btn-book-now {
+  border-radius: 0px;
+  padding: 3% 5%;
+  margin: 10% 35%;
+}
+
+#sixBed-carousel {
+  /*height: 100%;
+  width: 100%;*/
+}
+
+#rooms .carousel-col {
+  padding: 0;
+}
+
+/* SECTION CONTACT */
+#contact {
+    background-color: #d4ece8;
+}
+h1,h2,h3 {
+    color: white;
+    display: inline-block;
+}
+
+h1 {
+    font: 900 80px Raleway, Arial;
+    margin: 0 auto;
+}
+
+h2 {
+    font: 800 50px/50px Raleway, Arial;
+    margin: 0.5em auto;
+}
+
+h3 {
+    font: 800 42px Raleway, Arial;
+    margin: 0.5em auto;
+}
+
+h1::after, h2::after {
+    background-color: #71BFB3 !important;
+    display: block;
+    content: "";
+    height: 23px;
+}
+
+h1::after {
+    margin-top: -19px;
+}
+h2::after {
+    margin-top: -7px;
+}
+
+
+
+
+#booking-form h2 {
+    color: black;
+    font-size: 30px;
+    font-weight: 800;
+}
+#booking-form h2::after {
+    margin-top: -15px;
+}
