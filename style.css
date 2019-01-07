@@ -228,7 +228,7 @@ section {
     margin: 2em auto;
     transition: all .2s;
 
-    background-color: #E7C82D;
+    background-color: #71BFB3;
     border: none 1px white;
     margin: 2em auto;
 
@@ -278,7 +278,7 @@ h3 {
 }
 
 h1::after, h2::after {
-    background-color: #E7C82D !important;
+    background-color: #71BFB3 !important;
     display: block;
     content: "";
     height: 23px;
