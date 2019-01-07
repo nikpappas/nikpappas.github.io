@@ -67,7 +67,7 @@ body {
 #sidebarCollapse {
   background-color: white;
   border-radius: 0px;
-  font-size: 3rem;
+  font-size: 2em;
   padding: 1% 2%;
   position: fixed;
   z-index: 1;
@@ -120,7 +120,7 @@ body {
 }
 
 #sidebar li a {
-  font-size: 3rem;
+  font-size: 2rem;
   font-weight: bold;
   color: #999999;
 }
@@ -151,54 +151,27 @@ section {
 }
 
 .booking-form-scrolled {
-    transform: rotateX(99deg);
+    transform: scale3d(1,0,1);
 }
-#booking-form input{
-    height: 47px;
-    width: 130px;
-    text-align: center
-}
-#perspective-form-hider {
-    background-color: white;
-    height: 23px;
-    transform: translateZ(1px);
-}
-
 #booking-form-wrapper{
-    perspective: 1200px;
-    position: absolute;
-    bottom: 0;
-    left: 20vw;
-    width: 60vw;
+    margin: 20vh auto;
+    width: 24vw;
     height: 15vh;
     min-height: 100px;
+    min-width: 250px;
 }
 #booking-form {
     width: 100%;
     height: 100%;
-    background-color: white;
-    transition: all 0.4s;
-    transform-origin: 0 100%;
+    background-color: #f5e69c;
+    transition: all 0.3s ease-out;
 }
 
-#booking-form input {
-    background-color: white;
-    border: solid 1px #444;
-}
-#booking-form button {
-    background-color: black;
-    color: white;
-    width: 100px;
-    height: 40px;
-
-}
-
-#booking-form input, #booking-form button {
-    margin: 0 auto;
-}
 /* SECTION STORY */
+#story, #contact {
+    background-color: #f5e69c;
+}
 #story {
-    background-color: #d4ece8;
     padding-bottom: 5%;
 }
 
@@ -208,7 +181,8 @@ section {
 }
 
 #story .hostel-logo {
-  width: 100%;
+  width: 80%;
+  margin: 10% auto;
 }
 
 #story .about {
@@ -244,12 +218,28 @@ section {
 #rooms .simple-block {
   margin: 10%;
 }
+.btn-book-now {
+    color:white;
+    font-size: 20px;
+    font-weight: 300;
+    height: 47px;
+    width: 130px;
+    text-align: center;
+    margin: 2em auto;
+    transition: all .2s;
 
-#rooms .btn-book-now {
-  border-radius: 0px;
-  padding: 3% 5%;
-  margin: 10% 35%;
+    background-color: #E7C82D;
+    border: none 1px white;
+    margin: 2em auto;
+
 }
+.btn-book-now:hover{
+    color: #E7C82D;
+    background-color: white;
+    border: solid 1px #E7C82D;
+}
+
+
 
 #sixBed-carousel {
   /*height: 100%;
@@ -261,12 +251,15 @@ section {
 }
 
 /* SECTION CONTACT */
-#contact {
-    background-color: #d4ece8;
-}
 h1,h2,h3 {
-    color: white;
+    color: black;
     display: inline-block;
+}
+#about h1, #about h3 {
+    color: white;
+}
+#story h2 {
+    color: white;
 }
 
 h1 {
@@ -280,12 +273,12 @@ h2 {
 }
 
 h3 {
-    font: 800 42px Raleway, Arial;
+    font: 800 36px Raleway, Arial;
     margin: 0.5em auto;
 }
 
 h1::after, h2::after {
-    background-color: #71BFB3 !important;
+    background-color: #E7C82D !important;
     display: block;
     content: "";
     height: 23px;
@@ -298,14 +291,6 @@ h2::after {
     margin-top: -7px;
 }
 
-
-
-
-#booking-form h2 {
-    color: black;
-    font-size: 30px;
-    font-weight: 800;
-}
 #booking-form h2::after {
     margin-top: -15px;
 }

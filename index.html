@@ -24,19 +24,19 @@
     <div class="sidebar-content">
       <ul class="list-unstyled">
         <li>
-            <a href="#">Our Story</a>
+            <a href="#story">Our Story</a>
         </li>
         <li>
-            <a href="#">Rooms & Prices</a>
+            <a href="#rooms">Rooms & Prices</a>
         </li>
         <li>
-            <a href="#">Contact Us</a>
+            <a href="#contact">Contact Us</a>
         </li>
         <li>
             <a href="#">Services</a>
         </li>
       </ul>
-      <p style="color: white;">Follow us &nbsp;
+      <p style="color: white;">Follow us on &nbsp;
           <a target="_blank" href="https://www.facebook.com/soyoungheraklion/"><i class="fab fa-facebook-f"></i></a>
           <!--<a target="_blank" href="#"><i class="fab fa-twitter"></i></a>-->
           <a target="_blank" href="https://www.instagram.com/soyounghostel/"><i class="fab fa-instagram"></i></a>
@@ -52,7 +52,7 @@
         <span>reception: +30 2810336070 ( 9.00 AM / 23.00 PM )</span>
     </span>
     <span id="social-container">
-        <span id="social">Share</span>
+        <!-- <span id="social">Share</span> -->
         <span id="social-links">
             <a target="_blank" href="https://www.facebook.com/soyoungheraklion/"><i class="fab fa-facebook-f"></i></a>
             <!--<a target="_blank" href="#"><i class="fab fa-twitter"></i></a>-->
@@ -71,12 +71,11 @@
     <h3>We are the greatest, so young, so awesome</h3>
     <div id="booking-form-wrapper">
         <form target="_blank" id="booking-form" class="booking-form even-flex-box" onsubmit="onBookingFormSubmit(event)">
-            <h2>Book Now</h2>
+            <!-- <h2>Book Now</h2>
             <input id="date-from" type="date" onchange="onDateFromChange(event)"/>
-            <input id="date-to" type="date" />
-            <input type="submit" value="Search" />
+            <input id="date-to" type="date" /> -->
+            <input class="btn-book-now" type="submit" value="Book Now" />
         </form>
-        <div id="perspective-form-hider"></div>
     </div>
 </section>
 <section id="story">
@@ -88,7 +87,6 @@
             </div>
             <div class="col-lg-6 about">
                 <div class="simple-block text-left">
-                    <h2>About Us</h2>
                     <h3>What makes us unique?</h3>
                     <p>
                         We are a family owned business who had the idea of offering a centrally located and budget
@@ -105,7 +103,7 @@
                 </div>
             </div>
         </div>
-        <div class="row">
+        <!-- <div class="row">
             <div class="col-md-6 video-left">
                 <video width="320" height="240" controls>
                     <source src="movie.mp4" type="video/mp4">
@@ -120,7 +118,7 @@
                     Your browser does not support the video tag.
                 </video>
             </div>
-        </div>
+        </div> -->
     </div>
 </section>
 <section id="rooms">
@@ -129,7 +127,7 @@
         <div class="row">
             <div class="col-lg-6 six-room">
                 <div class="simple-block text-left">
-                    <h2 style="color: black;">Six-Bed Mixed Dorm with Shared Bathroom</h2>
+                    <h3>Six-Bed Mixed Dorm with Shared Bathroom</h3>
                     <h6 style="margin-top: 5%;">Our most budget friendly room type!</h6>
                     <ul style="margin-top: 5%;">
                         <li>Modern designed dorm rooms</li>
@@ -137,7 +135,9 @@
                         <li>Independent bed lights and electricity outlets to charge your cell phone or laptop</li>
                     </ul>
                     <h5 style="margin-top: 5%;">From €25 per bed per night during the high season</h5>
-                    <button class="btn btn-dark btn-book-now">BOOK NOW</button>
+                    <form>
+                        <input class="btn-book-now" type="submit" value="Book Now" />
+                    </form>
                 </div>
             </div>
             <div class="col-lg-6 carousel-col">
@@ -186,7 +186,7 @@
           </div>
           <div class="col-lg-6 six-room">
               <div class="simple-block text-left">
-                  <h2 style="color: black;">Six-Bed Mixed Dorm with Shared Bathroom</h2>
+                  <h3>Six-Bed Mixed Dorm with Shared Bathroom</h3>
                   <h6 style="margin-top: 5%;">Our most budget friendly room type!</h6>
                   <ul style="margin-top: 5%;">
                       <li>Modern designed dorm rooms</li>
@@ -194,14 +194,16 @@
                       <li>Independent bed lights and electricity outlets to charge your cell phone or laptop</li>
                   </ul>
                   <h5 style="margin-top: 5%;">From €25 per bed per night during the high season</h5>
-                  <button class="btn btn-dark btn-book-now">BOOK NOW</button>
+                  <form>
+                    <input class="btn-book-now" type="submit" value="Book Now" />
+                </form>
               </div>
           </div>
         </div>
         <div class="row">
             <div class="col-lg-6 six-room">
                 <div class="simple-block text-left">
-                    <h2 style="color: black;">Six-Bed Mixed Dorm with Shared Bathroom</h2>
+                    <h3>Six-Bed Mixed Dorm with Shared Bathroom</h3>
                     <h6 style="margin-top: 5%;">Our most budget friendly room type!</h6>
                     <ul style="margin-top: 5%;">
                         <li>Modern designed dorm rooms</li>
@@ -209,7 +211,9 @@
                         <li>Independent bed lights and electricity outlets to charge your cell phone or laptop</li>
                     </ul>
                     <h5 style="margin-top: 5%;">From €25 per bed per night during the high season</h5>
-                    <button class="btn btn-dark btn-book-now">BOOK NOW</button>
+                    <form>
+                        <input class="btn-book-now" type="submit" value="Book Now" />
+                    </form>
                 </div>
             </div>
             <div class="col-lg-6 carousel-col">
