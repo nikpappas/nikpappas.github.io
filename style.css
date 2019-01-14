@@ -16,13 +16,14 @@ span {
     padding: 0;
 }
 body {
-    background: url("images/morephotos/BLACKBOARDCROP.jpeg");
+    background: url("images/BLACKBOARDCROP-LOW-BRI.jpeg");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: 100% auto;
     background-color: #333;
     margin: 0;
     padding: 0;
+    color: #1b7189;
 }
 /* HEADER */
 #header {
@@ -161,15 +162,19 @@ section {
     min-width: 250px;
 }
 #booking-form {
-    width: 100%;
-    height: 100%;
+    width: 70%;
+    height: 100px;
     background-color: #f5e69c;
     transition: all 0.3s ease-out;
 }
-
+#general-photo-carousel{
+    background-color: #262626;
+    max-height: 800px;
+    overflow: hidden; 
+}
 /* SECTION STORY */
 #story, #contact {
-    background-color: #f5e69c;
+    background-color:#f2f2f2;
 }
 #story {
     padding-bottom: 5%;
@@ -177,16 +182,15 @@ section {
 
 #story .hostel-logo-col {
   padding: 0;
-    background-color: black;   
+    /*background-color: #f5e69c; */  
 }
 
 #story .hostel-logo {
   width: 80%;
   margin: 10% auto;
-}
-
-#story .about {
-  background-color: rgb(242, 242, 242);
+  filter: brightness(.7) hue-rotate(128deg);
+  /*brightness(.9) hue-rotate(-14deg);*/
+  /*hue-rotate(338DEG) brightness(.92)*/
 }
 
 #story .simple-block {
@@ -212,9 +216,18 @@ section {
 }
 
 #rooms .six-room {
-  background-color: rgb(255, 255, 255);
+  background-color: transparent;
+  color: #3d626c;
+  
+}
+.about h3,
+.six-room h3 {
+    color: #1b7189;
 }
 
+#rooms h2, #contact h2{
+    color:#262626;
+}
 #rooms .simple-block {
   margin: 10%;
 }
@@ -228,7 +241,7 @@ section {
     margin: 2em auto;
     transition: all .2s;
 
-    background-color: #71BFB3;
+    background-color: #639aa9;
     border: none 1px white;
     margin: 2em auto;
 
@@ -237,13 +250,6 @@ section {
     color: #E7C82D;
     background-color: white;
     border: solid 1px #E7C82D;
-}
-
-
-
-#sixBed-carousel {
-  /*height: 100%;
-  width: 100%;*/
 }
 
 #rooms .carousel-col {
@@ -259,7 +265,7 @@ h1,h2,h3 {
     color: white;
 }
 #story h2 {
-    color: white;
+    color: #262626;
 }
 
 h1 {
@@ -278,7 +284,7 @@ h3 {
 }
 
 h1::after, h2::after {
-    background-color: #71BFB3 !important;
+    background-color: #f5e69c;
     display: block;
     content: "";
     height: 23px;
